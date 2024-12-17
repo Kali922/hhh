@@ -1,25 +1,42 @@
-from os import environ
+# API credentials
+API_ID = 21863401
+API_HASH = "5f7d3dc656c008c70bffdf7f4f9b8ebb"
+BOT_TOKEN = "6748708552:AAEya6awhAuxwhR7ujfPWsko7j1GkCjPWjk"
+
+# Redis configuration
+REDIS_CONFIG = {
+    "HOST": "redis-15538.c10.us-east-1-2.ec2.redns.redis-cloud.com",
+    "PORT": 15538,
+    "USERNAME": "default",
+    "PASSWORD": "password",
+    "DATABASE": "NTM"
+}
+
+ADMINS = [6230356497]
+OWNER_ID = 6230356497  # Replace with your Telegram user ID
+PRIVATE_CHAT_ID = -1001830594381  # CHAT WHERE YOU WANT TO STORE VIDEOS
+USER_CHANNEL = -1001830594381
+DUMP_CHANNEL = -1001830594381
 
 
-# BOT CONFIG
-API_ID = environ.get("API_ID", 123456)  # api id
-API_HASH = environ.get("API_HASH", "")  # api hash
-BOT_TOKEN = environ.get("BOT_TOKEN", "")  # bot token
 
-# REDIS
-REDIS_HOST = environ.get("REDIS_HOST", "localhost")  # redis host uri
-REDIS_PORT = environ.get("REDIS_PORT", 12345)  # redis port
-REDIS_PASSWORD = environ.get(
-    "REDIS_PASSWORD", "q8vcRgGfoZgwKT6irvJ6AixPs1lFZdW8"
-)  # redis password
+REDIS_HOST= "redis-15538.c10.us-east-1-2.ec2.redns.redis-cloud.com"
+REDIS_PORT= 15538
+USERNAME= "default"
+REDIS_PASSWORD= "K8jmK9liI9n9zt6JDUeGBMEBAkSfkLYS"
+DATABASE= "Sandeepjangra7077gmailcom-free-db"
 
 
-ADMINS = [6791744215]
-OWNER_ID = 6791744215  # Replace with your Telegram user ID
-PRIVATE_CHAT_ID = -100  # CHAT WHERE YOU WANT TO STORE VIDEOS
-USER_CHANNEL = -100
-DUMP_CHANNEL = -100
 
+# Chat ID where videos will be stored
+PRIVATE_CHAT_ID = -1001830594381
 
-# Config
-COOKIE = environ.get("COOKIE", "")
+# Authentication cookie
+COOKIE = {
+"COOKIE": "PANWEB=1; csrfToken=BnQx-ffuJKamkWLrsx3Ksds4; browserid=qEGrcJcpudjTVSp34yywiOK8KGczvjGYTPI6jJMydd7dpoQVUXCzDlp7JFM=; lang=en; bid_n=18db31bdad1e0ee8094207; s>
+
+}
+# COOKIE FOR AUTHENTICATION (get from chrome dev tools) ex: "PANWEB=1; csrfToken=; lang=en; TSID=; __bid_n=; _ga=; __stripe_mid=; ndus=; browserid==; ndut_fmt=; _ga_06ZN>
+
+# List of bot admins
+ADMINS = [6230356497]
