@@ -124,9 +124,9 @@ async def stats_command(m: UpdateNewMessage):
     check_if = await is_user_on_chat(bot, f"@bhgbjd", m.peer_id)
     if not check_if:
         return await m.reply(f"Please join @bhgbjd then send me the link again.")
-    check_if = await is_user_on_chat(bot, f"@TeamDextiN", m.peer_id)
+    check_if = await is_user_on_chat(bot, f"@bhgbjd", m.peer_id)
     if not check_if:
-        return await m.reply(f"Please join @TeamDextiN then send me the link again.")
+        return await m.reply(f"Please join @bhgbjd then send me the link again.")
 
     uptime = convert_seconds(time.time() - bot_start_time)
     message_count = get_message_count()
@@ -183,9 +183,9 @@ async def start(m: UpdateNewMessage):
     check_if = await is_user_on_chat(bot, f"@bhgbjd", m.peer_id)
     if not check_if:
         return await m.reply(f"Please join @bhgbjd then send me the link again.")
-    check_if = await is_user_on_chat(bot, f"@TeamDextiN", m.peer_id)
+    check_if = await is_user_on_chat(bot, f"@bhgbjd", m.peer_id)
     if not check_if:
-        return await m.reply(f"Please join @TeamDextiN then send me the link again.")
+        return await m.reply(f"Please join @bhgbjd then send me the link again.")
     await m.reply(
         reply_text,
         buttons=[
@@ -236,9 +236,9 @@ async def help_command(m: UpdateNewMessage):
     check_if = await is_user_on_chat(bot, f"@bhgbjd", m.peer_id)
     if not check_if:
         return await m.reply(f"Please join @bhgbjd then send me the link again.")
-    check_if = await is_user_on_chat(bot, f"@TeamDextiN", m.peer_id)
+    check_if = await is_user_on_chat(bot, f"@bhgbjd", m.peer_id)
     if not check_if:
-        return await m.reply(f"Please join @TeamDextiN then send me the link again.")
+        return await m.reply(f"Please join @bhgbjd then send me the link again.")
     help_text = """
 Available commands:
 
@@ -294,9 +294,9 @@ async def handle_message(m: Message):
     check_if = await is_user_on_chat(bot, "@bhgbjd", m.peer_id)
     if not check_if:
         return await m.reply("Please join @bhgbjd  then send me the link again.")
-    check_if = await is_user_on_chat(bot, "@TeamDextiN", m.peer_id)
+    check_if = await is_user_on_chat(bot, "@bhgbjd", m.peer_id)
     if not check_if:
-        return await m.reply("Please join @TeamDextiN then send me the link again.")
+        return await m.reply("Please join @bhgbjd then send me the link again.")
     is_spam = db.get(m.sender_id)
     if is_spam and m.sender_id not in [6791744215]:
         return await m.reply("You are spamming. Please wait a 1 minute and try again.")
